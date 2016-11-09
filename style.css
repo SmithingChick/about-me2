@@ -1,0 +1,136 @@
+
+@font-face {
+font-family: 'Proza Libre', 'Verdana', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Proza+Libre:400,600i,700,900");
+}
+
+/*--- basic layout structure ---*/
+body {
+  background-color: #3f383b;
+}
+
+header {
+  background-color: #e5a2a2;
+  height: 275px;
+  margin-top: -50px;
+}
+
+main {
+  width: 900px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #d6d6d6;
+}
+
+::after header {
+  content: "";
+  display: block;
+  clear: both;
+  padding-bottom: 30px;
+}
+
+
+/*--- type styles---*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Proza Libre', 'Verdana', sans-serif;
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  color: #660000;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 30pt;
+}
+
+h2 {
+  font-size: 24pt;
+  margin-top: 30px;
+}
+
+h3 {
+  color: #660000;
+  font-size: 16pt;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 25px;
+}
+
+h4 {
+  color: #cc0000;
+  margin-bottom: 25px;
+}
+
+h5 {
+  color: #cc0000;
+  font-size: 11pt;
+}
+
+p {
+  font-family: "Verdana", sans-serif;
+  padding-left: 30px;
+}
+
+ul, ol {
+  padding-left: 100px;
+  font-family: "Verdana", sans-serif;
+}
+
+.headline {
+  font-size: 46pt;
+  font-weight: 900;
+  padding-top: 50px;
+  padding-left: 375px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  color: #83151A;
+  font-size: 32pt;
+  font-weight: 700;
+  font-style: italic;
+  padding-left: 500px;
+  margin-top: 0px;
+}
+
+.maker1 {
+  color: #83151A;
+  font-size: 18pt;
+  padding-left: 30px;
+}
+
+.maker2 {
+  color: #83151A;
+  font-size: 16pt;
+  padding-left: 30px;
+  font-style: italic;
+}
+
+
+/*--- link styles ---*/
+a:link {
+  color: #b30000;
+}
+
+a:visited {
+  color: #660000;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+a:active {
+  color: #ff4d4d;
+}
+
+
+/*--- graphics styles ---*/
+.mark {
+  height: 200px;
+  float: left;
+  padding-left: 200px;
+  padding-top: 30px;
+}
