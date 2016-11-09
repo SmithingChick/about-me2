@@ -60,6 +60,7 @@ h3 {
 
 h4 {
   color: #cc0000;
+  font-size: 14pt;
   margin-bottom: 25px;
 }
 
@@ -102,7 +103,7 @@ ul, ol {
 }
 
 .maker2 {
-  color: #83151A;
+  color: #000;
   font-size: 16pt;
   padding-left: 30px;
   font-style: italic;
@@ -130,7 +131,10 @@ a:active {
 /*--- graphics styles ---*/
 .mark {
   height: 200px;
+  width: 200px;
   float: left;
-  padding-left: 200px;
-  padding-top: 30px;
+  padding-left: 150px;
+  transform: rotate(30deg);
+    -ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
 }
