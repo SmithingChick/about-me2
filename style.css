@@ -52,20 +52,21 @@ h2 {
 
 h3 {
   color: #660000;
-  font-size: 16pt;
+  font-size: 20pt;
   font-weight: 600;
-  font-style: italic;
+  /*font-style: italic;*/
   margin-top: 25px;
 }
 
 h4 {
   color: #cc0000;
+  font-size: 18pt;
   margin-bottom: 25px;
 }
 
 h5 {
   color: #cc0000;
-  font-size: 11pt;
+  font-size: 16pt;
 }
 
 p {
@@ -102,12 +103,20 @@ ul, ol {
 }
 
 .maker2 {
-  color: #83151A;
+  color: #000;
   font-size: 16pt;
   padding-left: 30px;
   font-style: italic;
 }
 
+.quiz-list {
+  padding-left: 75px;
+}
+
+.quiz-list h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
 
 /*--- link styles ---*/
 a:link {
@@ -130,7 +139,10 @@ a:active {
 /*--- graphics styles ---*/
 .mark {
   height: 200px;
+  width: 200px;
   float: left;
-  padding-left: 200px;
-  padding-top: 30px;
+  padding-left: 150px;
+  transform: rotate(30deg);
+    -ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
 }
