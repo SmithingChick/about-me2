@@ -18,7 +18,7 @@ header {
 main {
   width: 900px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 100px;
   background-color: #d6d6d6;
 }
 
@@ -30,15 +30,15 @@ main {
 }
 
 
-/*--- type styles---*/
+/*--- general type styles---*/
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Proza Libre', 'Verdana', sans-serif;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
 h1, h2 {
   color: #660000;
-  font-weight: 700;
 }
 
 h1 {
@@ -79,6 +79,26 @@ ul, ol {
   font-family: "Verdana", sans-serif;
 }
 
+
+/*--- link styles ---*/
+a:link {
+  color: #b30000;
+}
+
+a:visited {
+  color: #660000;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+a:active {
+  color: #ff4d4d;
+}
+
+/*--- specific type styles---*/
+/*--- index.html type styles---*/
 .headline {
   font-size: 46pt;
   font-weight: 900;
@@ -102,15 +122,10 @@ ul, ol {
   padding-left: 30px;
 }
 
-.maker2 {
-  color: #000;
-  font-size: 16pt;
-  padding-left: 30px;
-  font-style: italic;
-}
+/*--- guess.html type styles---*/
 
 .quiz-list {
-  padding-left: 75px;
+  padding-left: 50px;
 }
 
 .quiz-list h3 {
@@ -118,21 +133,8 @@ ul, ol {
   font-weight: bold;
 }
 
-/*--- link styles ---*/
-a:link {
-  color: #b30000;
-}
-
-a:visited {
-  color: #660000;
-}
-
-a:hover {
-  color: #ff0000;
-}
-
-a:active {
-  color: #ff4d4d;
+.quiz-list b {
+  color: #ad0022;
 }
 
 

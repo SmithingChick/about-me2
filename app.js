@@ -85,7 +85,7 @@ reader();
 // Wednesday Lab Additions
 // Number Guess
 
-// Question 6 - Teaching
+// Question 6 - Teaching with 4 chances
 function teaching() {
   var teachSemesters = 6;
 
@@ -108,7 +108,7 @@ function teaching() {
 }
 teaching();
 
-// Question 7 - Home
+// Question 7 - Home with 6 chances
 function home() {
   var cityA = ['erie', 'baltimore', 'union city', 'grand forks', 'salem', 'portland'];
   var correct = false;
@@ -119,7 +119,7 @@ function home() {
       totalCorrect++;
       correct = true;
     } else {
-      alert('Nope. I\'ve never lived in ' + cityQ);
+      alert('Nope. I\'ve never lived in ' + cityQ + '. I\'ve heard it\'s nice, though.');
     }
     console.log('I did not die of cholera.');
   }
