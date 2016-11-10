@@ -11,7 +11,7 @@ body {
 
 header {
   background-color: #e5a2a2;
-  height: 275px;
+  height: 265px;
   margin-top: -50px;
 }
 
@@ -98,6 +98,22 @@ a:active {
 }
 
 /*--- specific type styles---*/
+/*--- class:navbar type styles---*/
+.navbar {
+  height: 35px;
+  background-color: #660000;
+  padding-bottom: 0px:
+  margin-bottom: 0px;
+
+}
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
 /*--- index.html type styles---*/
 .headline {
   font-size: 46pt;
@@ -144,7 +160,7 @@ a:active {
   width: 200px;
   float: left;
   padding-left: 150px;
-  transform: rotate(30deg);
-    -ms-transform: rotate(30deg); /* IE 9 */
-    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
 }

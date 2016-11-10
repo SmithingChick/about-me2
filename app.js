@@ -8,8 +8,8 @@ console.log('Would you like to play a game?');
 var totalCorrect = 0;
 
 // Question 1 - Sarcasm
+var sarcasmMuch = prompt('Am I sarcastic?');
 function sarcasm() {
-  var sarcasmMuch = prompt('Am I sarcastic?');
   if (sarcasmMuch.toLowerCase() === 'yes' || sarcasmMuch.toLowerCase() === 'y' ) {
     alert('So you\'ve met me, then.');
     totalCorrect++;
@@ -23,8 +23,8 @@ function sarcasm() {
 sarcasm();
 
 //Question 2 - Birds
-function blackBirds() {
-  var blackBirds = prompt('Do I like large black birds like crows & ravens?');
+var blackBirds = prompt('Do I like large black birds like crows & ravens?');
+function birds() {
   if (blackBirds.toLowerCase() === 'yes' || blackBirds.toLowerCase() === 'y' ) {
     alert('That\'s right. I regard them as something of a spirit animal.');
     totalCorrect++;
@@ -35,11 +35,11 @@ function blackBirds() {
   }
   console.log('*starts humming the Beatle\'s "Blackbird"*');
 }
-blackBirds();
+birds();
 
 //Question 3 - Wombats
+var wombatFan = prompt('Do I also love wombats?');
 function wombat() {
-  var wombatFan = prompt('Do I also love wombats?');
   if (wombatFan.toLowerCase() === 'yes' || wombatFan.toLowerCase() === 'y' ) {
     alert('Yes indeed, ' + userName + '. I even have 2 stuffed wombats I consider my "pets". Their names are Watson & Wanda & they\'re adorable.');
     totalCorrect++;
@@ -53,8 +53,8 @@ function wombat() {
 wombat();
 
 // Question 4 - DJ
+var radioDJ = prompt('Was I a college radio DJ?');
 function radio() {
-  var radioDJ = prompt('Was I a college radio DJ?');
   if (radioDJ.toLowerCase() === 'yes' || radioDJ.toLowerCase() === 'y' ) {
     alert('Yep! My air name was Molly McQuire.');
     totalCorrect++;
@@ -68,8 +68,8 @@ function radio() {
 radio();
 
 // Question 5 - Reading
+var heavyReader = prompt('Do I hate to read?');
 function reader() {
-  var heavyReader = prompt('Do I hate to read?');
   if (heavyReader.toLowerCase() === 'yes' || heavyReader.toLowerCase() === 'y' ) {
     alert('Wrong! Wrong! Wrong! You\'ve obviously never been to my apartment, ' + userName + '.');
     totalCorrect++;
@@ -86,9 +86,8 @@ reader();
 // Number Guess
 
 // Question 6 - Teaching with 4 chances
+var teachSemesters = 6;
 function teaching() {
-  var teachSemesters = 6;
-
   for (var i = 4; i >= 1 && numberGuessInt !== teachSemesters; i--) {
     var numberGuess = prompt('How many semesters did I teach Jewelry/Metalsmithing at UND?');
     var numberGuessInt = parseInt(numberGuess);
@@ -109,8 +108,8 @@ function teaching() {
 teaching();
 
 // Question 7 - Home with 6 chances
+var cityA = ['erie', 'baltimore', 'union city', 'grand forks', 'salem', 'portland'];
 function home() {
-  var cityA = ['erie', 'baltimore', 'union city', 'grand forks', 'salem', 'portland'];
   var correct = false;
   for (var i = 5; i >= 0 && correct != true; i--) {
     var cityQ = prompt('Can you guess a city that I\'ve lived in? You have ' + (i + 1) + ' guesses.').toLowerCase();
@@ -127,6 +126,7 @@ function home() {
 }
 home();
 
+// Total correct answers
 if (totalCorrect === 6) {
   alert('You got every question right! You know me well. Possibly too well...');
 } else if (totalCorrect >= 5) {
