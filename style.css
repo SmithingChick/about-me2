@@ -52,21 +52,21 @@ h2 {
 
 h3 {
   color: #660000;
-  font-size: 16pt;
+  font-size: 20pt;
   font-weight: 600;
-  font-style: italic;
+  /*font-style: italic;*/
   margin-top: 25px;
 }
 
 h4 {
   color: #cc0000;
-  font-size: 14pt;
+  font-size: 18pt;
   margin-bottom: 25px;
 }
 
 h5 {
   color: #cc0000;
-  font-size: 11pt;
+  font-size: 16pt;
 }
 
 p {
@@ -109,6 +109,14 @@ ul, ol {
   font-style: italic;
 }
 
+.quiz-list {
+  padding-left: 75px;
+}
+
+.quiz-list h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
 
 /*--- link styles ---*/
 a:link {

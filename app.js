@@ -41,7 +41,7 @@ blackBirds();
 function wombat() {
   var wombatFan = prompt('Do I also love wombats?');
   if (wombatFan.toLowerCase() === 'yes' || wombatFan.toLowerCase() === 'y' ) {
-    alert('Yes indeed, ' + userName + '. I even have 2 stuffed wombats I consider my "pets". Their names are Watson & Wanda & they\'re adorable. And they don\'t eat much.');
+    alert('Yes indeed, ' + userName + '. I even have 2 stuffed wombats I consider my "pets". Their names are Watson & Wanda & they\'re adorable.');
     totalCorrect++;
   } else if (wombatFan.toLowerCase() === 'no' || wombatFan.toLowerCase() === 'n' ){
     alert('Oh, I do, ' + userName + '. I do. It\'s all North Dakota\'s fault.');
@@ -56,7 +56,7 @@ wombat();
 function radio() {
   var radioDJ = prompt('Was I a college radio DJ?');
   if (radioDJ.toLowerCase() === 'yes' || radioDJ.toLowerCase() === 'y' ) {
-    alert('Yep! My air name was Molly McQuire. I took the name from a band of Irish miners rights activist/terrorists (depending on who you ask) that were tried & hung in my Dad\s hometown of Pottsville, PA.');
+    alert('Yep! My air name was Molly McQuire.');
     totalCorrect++;
   } else if (radioDJ.toLowerCase() === 'no' || radioDJ.toLowerCase() === 'n' ){
     alert('I was! I DJ\'d on WERG in Erie, PA back in the early 90\'s. Fun fact- WERG was the station for a different university than the one I was actually attending.');
@@ -128,7 +128,7 @@ function home() {
 home();
 
 if (totalCorrect === 6) {
-  alert('You got every question right! You know me well. Possibly too well.');
+  alert('You got every question right! You know me well. Possibly too well...');
 } else if (totalCorrect >= 5) {
   alert('You got ' + totalCorrect + ' answers correct. We\'ve obviously hung out a few times.');
 } else if (totalCorrect >= 3) {
