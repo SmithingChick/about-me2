@@ -11,14 +11,14 @@ var totalCorrect = 0;
 function sarcasm() {
   var sarcasmMuch = prompt('Am I sarcastic?');
   if (sarcasmMuch.toLowerCase() === 'yes' || sarcasmMuch.toLowerCase() === 'y' ) {
-    alert('So you\'ve met her, then.');
+    alert('So you\'ve met me, then.');
     totalCorrect++;
   } else if (sarcasmMuch.toLowerCase() === 'no' || sarcasmMuch.toLowerCase() === 'n' ){
     alert('Clearly, you\'ve never had a conversation with me, ' + userName + '. I\'m a punk rock chick from the Rust Belt. We\'re not allowed to speak without a certain level of sarcasm.');
   } else {
     alert('Dude! WTF is that? Yes or no. It\'s not that complicated.');
   }
-  console.log('It\'s her first language.');
+  console.log('It\'s my first language.');
 }
 sarcasm();
 
@@ -89,7 +89,7 @@ reader();
 function teaching() {
   var teachSemesters = 6;
 
-  for (var i = 4; i >= 1 && degreesQ !== degreesA; i--) {
+  for (var i = 4; i >= 1 && numberGuessInt !== teachSemesters; i--) {
     var numberGuess = prompt('How many semesters did I teach Jewelry/Metalsmithing at UND?');
     var numberGuessInt = parseInt(numberGuess);
 
@@ -103,7 +103,7 @@ function teaching() {
     } else {
       alert('I taught for 6 semesters & really loved it. ');
     }
-    console.log('Even when my students drove me to drink!');
+    console.log('I loved it even when my students drove me to drink!');
   }
 }
 teaching();
@@ -127,7 +127,7 @@ function home() {
 }
 home();
 
-if (totalCorrect === 7) {
+if (totalCorrect === 6) {
   alert('You got every question right! You know me well. Possibly too well.');
 } else if (totalCorrect >= 5) {
   alert('You got ' + totalCorrect + ' answers correct. We\'ve obviously hung out a few times.');
