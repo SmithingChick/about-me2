@@ -5,6 +5,11 @@ var userName = prompt('Welcome! What\'s your name?');
 console.log('Your name is ' + userName);
 alert('Greetings, ' + userName + '. Let\'s see how well you know me.');
 console.log('Would you like to play a game?');
+var jsNameGetId = document.getElementById('writeName');
+var jsNameCreateEl = document.createElement('p');
+jsNameCreateEl.textContent = 'So, how did you do, ' + userName + '?';
+jsNameGetId.append(jsNameCreateEl);
+
 var totalCorrect = 0;
 
 // Question 1 - Sarcasm
@@ -21,6 +26,11 @@ function sarcasm() {
   console.log('It\'s my first language.');
 }
 sarcasm();
+var jsSarcasmGetId = document.getElementById('writeSarcasm');
+var jsSarcasmCreateEl = document.createElement('p');
+jsSarcasmCreateEl.textContent = 'Your answer was ' + sarcasmMuch;
+jsSarcasmGetId.append(jsSarcasmCreateEl);
+
 
 //Question 2 - Birds
 var blackBirds = prompt('Do I like large black birds like crows & ravens?');
@@ -36,6 +46,11 @@ function birds() {
   console.log('*starts humming the Beatle\'s "Blackbird"*');
 }
 birds();
+var jsBirdsGetId = document.getElementById('writeBirds');
+var jsBirdsCreateEl = document.createElement('p');
+jsBirdsCreateEl.textContent = 'Your answer was ' + blackBirds;
+jsBirdsGetId.append(jsBirdsCreateEl);
+
 
 //Question 3 - Wombats
 var wombatFan = prompt('Do I also love wombats?');
@@ -51,6 +66,10 @@ function wombat() {
   console.log('May the Wombat of Happiness shuffle through your underbrush.');
 }
 wombat();
+var jsWombatsGetId = document.getElementById('writeWombats');
+var jsWombatsCreateEl = document.createElement('p');
+jsWombatsCreateEl.textContent = 'Your answer was ' + wombatFan;
+jsWombatsGetId.append(jsWombatsCreateEl);
 
 // Question 4 - DJ
 var radioDJ = prompt('Was I a college radio DJ?');
@@ -66,14 +85,18 @@ function radio() {
   console.log('Nothin\' but the local DJ. Said she had a song to play. What came down from her foolin\' around gave us hope for a brand new day');
 }
 radio();
+var jsRadioGetId = document.getElementById('writeRadio');
+var jsRadioCreateEl = document.createElement('p');
+jsRadioCreateEl.textContent = 'Your answer was ' + radioDJ;
+jsRadioGetId.append(jsRadioCreateEl);
 
 // Question 5 - Reading
-var heavyReader = prompt('Do I hate to read?');
+var easyReader = prompt('Do I hate to read?');
 function reader() {
-  if (heavyReader.toLowerCase() === 'yes' || heavyReader.toLowerCase() === 'y' ) {
+  if (easyReader.toLowerCase() === 'yes' || easyReader.toLowerCase() === 'y' ) {
     alert('Wrong! Wrong! Wrong! You\'ve obviously never been to my apartment, ' + userName + '.');
     totalCorrect++;
-  } else if (heavyReader.toLowerCase() === 'no' || heavyReader.toLowerCase() === 'n' ){
+  } else if (easyReader.toLowerCase() === 'no' || easyReader.toLowerCase() === 'n' ){
     alert( 'I read constantly! I even picked up an e-reader because I ran out of room in my apartment for more shelves.');
   } else {
     alert('Dude! WTF is that? Yes or no. It\'s not that complicated');
@@ -81,9 +104,10 @@ function reader() {
   console.log('I like big books and I cannot lie.');
 }
 reader();
-
-// Wednesday Lab Additions
-// Number Guess
+var jsReadGetId = document.getElementById('writeRead');
+var jsReadCreateEl = document.createElement('p');
+jsReadCreateEl.textContent = 'Your answer was ' + easyReader;
+jsReadGetId.append(jsReadCreateEl);
 
 // Question 6 - Teaching with 4 chances
 var teachSemesters = 6;
@@ -106,6 +130,10 @@ function teaching() {
   }
 }
 teaching();
+var jsTeachGetId = document.getElementById('writeTeach');
+var jsTeachCreateEl = document.createElement('p');
+jsTeachCreateEl.textContent = 'Your answer was ' + teachSemesters;
+jsTeachGetId.append(jsTeachCreateEl);
 
 // Question 7 - Home with 6 chances
 var cityA = ['erie', 'baltimore', 'union city', 'grand forks', 'salem', 'portland'];
@@ -118,13 +146,23 @@ function home() {
       totalCorrect++;
       correct = true;
     } else {
-      alert('Nope. I\'ve never lived in ' + cityQ + '. I\'ve heard it\'s nice, though.');
+      alert('Nope. I\'ve never lived in ' + cityQ + '. I\'ve heard it\'s nice, though. Probably');
     }
     console.log('I did not die of cholera.');
+    var jsCityGetId = document.getElementById('writeCity');
+    var jsCityCreateEl = document.createElement('p');
+    jsCityCreateEl.textContent = 'Your answer was ' + cityQ;
+    jsCityGetId.append(jsCityCreateEl);
   }
   alert('I\'ve lived in Erie, PA; Baltimore, MD; Union City, PA; Grand Forks, ND; Portland, OR; and Salem, OR. I\'m currently in Portland & I love it!');
 }
 home();
+
+
+var jsTotalGetId = document.getElementById('writeTotal');
+var jsTotalCreateEl = document.createElement('p');
+jsTotalCreateEl.textContent = 'You got ' + totalCorrect;
+jsTotalGetId.append(jsTotalCreateEl);
 
 // Total correct answers
 if (totalCorrect === 6) {
@@ -140,3 +178,7 @@ if (totalCorrect === 6) {
 } else {
   alert('Squirrel!');
 }
+// var jsTotalGetId = document.getElementById('writeTotal');
+// var jsTotalCreateEl = document.createElement('p');
+// jsTotalCreateEl.textContent = 'You got ' + totalCorrect;
+// jsTotalGetId.append(jsTotalCreateEl);

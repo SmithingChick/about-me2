@@ -11,8 +11,9 @@ var jsNameCreateEl = document.createElement('p');
 jsNameCreateEl.textContent = 'So, how did you do, ' + userName + '?';
 jsNameGetId.append(jsNameCreateEl);
 
-var  = document.createTextNode ('Your answer was ' + sarcasmMuch);
-var jsNameGetId = document.getElementById('writeSarcasm');
-var jsNameCreateEl = document.createElement('p');
-jsNameCreateEl.textContent = 'So, how did you do, ' + userName + '?';
-jsNameGetId.append(jsNameCreateEl);
+// var  = document.createTextNode ('Your answer was ' + sarcasmMuch);
+var sarcasmMuch = prompt('Am I sarcastic?');
+var jsSarcasmGetId = document.getElementById('writeSarcasm');
+var jsSarcasmCreateEl = document.createElement('p');
+jsSarcasmCreateEl.textContent = 'Your answer was ' + sarcasmMuch;
+jsSarcasmGetId.append(jsSarcasmCreateEl);
